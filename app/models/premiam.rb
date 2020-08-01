@@ -1,0 +1,2 @@
+class Premiam < ApplicationRecord
+end

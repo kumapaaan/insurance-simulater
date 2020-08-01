@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<h1>保険シュミレーター</h1>
+
+<%= search_form_for @q do |f| %>
+
+  <%= f.label :age %>
+  <%= f.number_field :age_eq %>
+
+  <%= f.label :sex %>
+  <%= f.radio_button :sex_eq, 1 %>男性
+  <%= f.radio_button :sex_eq, 2 %>女性
+
+  <%= f.submit "検索" %>
+<% end %>
+
+<table>
+  <thead>
+    <tr>
+      <th>保険の種類</th>
+      <th>年齢</th>
+      <th>性別</th>
+      <th>プラン</th>
+      <th><%= sort_link(@q, :fee, "保険料") %></th>
+      <th>保険会社</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @premiams.each do |premiam| %>
+      <tr>
+        <td><%= premiam.name %></td>
+        <td><%= premiam.age %></td>
+        <td><%= premiam.sex %></td>
+        <td><%= premiam.plan %></td>
+        <td><%= premiam.fee %></td>
+        <td><%= premiam.company %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
