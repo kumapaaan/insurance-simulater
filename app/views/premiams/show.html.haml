@@ -1,0 +1,22 @@
+%p#notice= notice
+%p
+  %strong Name:
+  = @premiam.name
+%p
+  %strong Age:
+  = @premiam.age
+%p
+  %strong Sex:
+  = @premiam.sex
+%p
+  %strong Plan:
+  = @premiam.plan
+%p
+  %strong Fee:
+  = @premiam.fee
+%p
+  %strong Company:
+  = @premiam.company
+= link_to 'Edit', edit_premiam_path(@premiam)
+|
+= link_to 'Back', premiams_path
