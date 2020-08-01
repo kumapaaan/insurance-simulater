@@ -1,24 +1,24 @@
-# README
+## ・アプリ名
+### Insurance-Simulater
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## ・概容
+### 自分の年齢に合った医療保険の保険料を算出するアプリです。
+年齢、性別を入力する事によって保険会社数社の中から保険料が安い順で算出できる予定のアプリとなります。
 
-Things you may want to cover:
+#### 利用シーン（例）
+満期を迎えた時、とりあえず安い保険で考えたい時。
 
-* Ruby version
+## ・制作背景（意図）
+#### 「保険会社のパンフレット見るのめんどくさい」「何社も比較するのめんどくさい」そんな思いを解決するために開発中。
+私は前職が保険の営業していた事もあり、何か保険に関係したアプリを熟慮しておりました。
+そんな中、今年度両親が還暦を迎え、今までかけてきた保険が満期になった言う報告を受けました。
+両親は数々の保険会社の資料を取り寄せ、１社１社保険会社の保険料を計算しておりました。
+保険会社のパンフレットを１度でも見たことがある方ならご存知だと思いますが、非常に字が小さく、全体的に見づらいです。
+それを何とか解消できなかと考え、このアプリを作成中です。
 
-* System dependencies
+## ・DEMO
 
-* Configuration
+## ・実装予定の内容
+・年齢、性別を入力した際に保険会社、保険料(医療保険)が数社出てくる仕組み。
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## ・DB設計
