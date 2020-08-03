@@ -1,0 +1,29 @@
+= form_with(model: premiam, local: true) do |form|
+  - if premiam.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(premiam.errors.count, "error")
+        prohibited this premiam from being saved:
+      %ul
+        - premiam.errors.full_messages.each do |message|
+          %li= message
+  .field
+    = form.label :name
+    = form.text_field :name
+  .field
+    = form.label :age
+    = form.number_field :age
+  .field
+    = form.label :sex
+    = form.number_field :sex
+  .field
+    = form.label :plan
+    = form.text_field :plan
+  .field
+    = form.label :fee
+    = form.text_field :fee
+  .field
+    = form.label :company
+    = form.text_field :company
+  .actions
+    = form.submit
