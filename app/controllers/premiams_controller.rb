@@ -29,7 +29,7 @@ class PremiamsController < ApplicationController
 
     respond_to do |format|
       if @premiam.save
-        format.html { redirect_to @premiam, notice: 'Premiam was successfully created.' }
+        format.haml { redirect_to @premiam, notice: 'Premiam was successfully created.' }
         format.json { render :show, status: :created, location: @premiam }
       else
         format.html { render :new }
@@ -43,10 +43,10 @@ class PremiamsController < ApplicationController
   def update
     respond_to do |format|
       if @premiam.update(premiam_params)
-        format.html { redirect_to @premiam, notice: 'Premiam was successfully updated.' }
+        format.haml { redirect_to @premiam, notice: 'Premiam was successfully updated.' }
         format.json { render :show, status: :ok, location: @premiam }
       else
-        format.html { render :edit }
+        format.haml { render :edit }
         format.json { render json: @premiam.errors, status: :unprocessable_entity }
       end
     end
