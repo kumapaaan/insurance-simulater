@@ -6,36 +6,38 @@
       = image_tag 'https://d1f5hsy4d47upe.cloudfront.net/59/59815c55c8b883f70d01677ea31c0c99_t.jpeg', width: "100%", height: "500px"
       .Premiam__main__title__sub 保険料を少しでも安くしたいそこのあなた！今すぐ10秒見積もり！！
     .Premiam__main__search
-      %h3 年齢,性別を選択してください
-      = search_form_for @q do |f|
-        = f.label :年齢
-        = f.number_field :age_eq
-        = f.label :性別
-        = f.radio_button :sex_eq, 1
-        男性/1
-        = f.radio_button :sex_eq, 2 
-        女性/2  
-        = f.submit "見積もりスタート"
-        
-      %table
-        %thead
-          %tr
-            %th 保険の種類
-            %th 年齢
-            %th 性別
-            %th プラン
-            %th= sort_link(@q, :fee, "保険料")
-            %th 保険会社
-            %th{:colspan => "3"}
-        %tbody
-          - @premiams.each do |premiam|
+      .Premiam__main__search__field
+        %h3 年齢・性別を選択してください
+        .Premiam__main__search__field__sub
+          = search_form_for @q do |f|
+            = f.label :"年齢"
+            = f.number_field :age_eq, class: "age", placeholder: "未選択"
+            = f.label :"性別", class:"sex"
+            = f.radio_button :sex_eq, 1
+            男性/1
+            = f.radio_button :sex_eq, 2 
+            女性/2  
+            = f.submit :"見積もりスタート", class:"btn", id:"btn"
+      .Premiam__main__search__result
+        %table
+          %thead
             %tr
-              %td= premiam.name
-              %td= premiam.age
-              %td= premiam.sex
-              %td= premiam.plan
-              %td= premiam.fee
-              %td= premiam.company
+              %th 保険の種類
+              %th 年齢
+              %th 性別
+              %th プラン
+              %th= sort_link(@q, :fee, "保険料")
+              %th 保険会社
+              %th{:colspan => "3"}
+          %tbody
+            - @premiams.each do |premiam|
+              %tr
+                %td= premiam.name
+                %td= premiam.age
+                %td= premiam.sex
+                %td= premiam.plan
+                %td= premiam.fee
+                %td= premiam.company
   .Premiam__fotter
     .Premiam__fotter__title
       %h2 資料請求はこちら
