@@ -17,7 +17,8 @@
 それを何とか解消できなかと考え、このアプリを作成中です。
 
 ## ・DEMO
-https://i.gyazo.com/2088e74a7db7431e5c48d53d672fc796.mp4
+![sample mp4](https://user-images.githubusercontent.com/66234441/89405104-00467c00-d756-11ea-9ca6-9cb6c9e838b9.gif)
+
 
 ## ・実装予定の内容
 ・年齢、性別を入力した際に保険会社、保険料(医療保険)が数社出てくる仕組み。
