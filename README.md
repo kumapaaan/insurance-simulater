@@ -22,3 +22,12 @@
 ・年齢、性別を入力した際に保険会社、保険料(医療保険)が数社出てくる仕組み。
 
 ## ・DB設計
+### premiamsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string||
+|age|integer||
+|sex|integer||
+|plan|string||
+|fee|string||
+|company|string||
