@@ -107,6 +107,7 @@ Premiam.create(name:'医療保険', age: '27', sex:'2', plan:'日額5000円', fe
 Premiam.create(name:'医療保険', age: '28', sex:'2', plan:'日額5000円', fee:'1637円', company:'オリックス生命')
 Premiam.create(name:'医療保険', age: '29', sex:'2', plan:'日額5000円', fee:'1657円', company:'オリックス生命')
 
+
 Premiam.create(name:'医療保険', age: '20', sex:'1', plan:'日額5000円', fee:'1119円', company:'ライフネット生命')
 Premiam.create(name:'医療保険', age: '21', sex:'1', plan:'日額5000円', fee:'1231円', company:'ライフネット生命')
 Premiam.create(name:'医療保険', age: '22', sex:'1', plan:'日額5000円', fee:'1265円', company:'ライフネット生命')
