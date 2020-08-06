@@ -1,7 +1,7 @@
 ## アプリ名
 ### Insurance Simulater
 https://insurance-simulater.herokuapp.com/
-## ・概容
+## 概容
 ### 自分の年齢に合った保険（医療保険）の保険料を算出するアプリです。
 年齢・性別を入力する事によって保険会社数社の中から保険料が算出できるアプリとなります。  
 
