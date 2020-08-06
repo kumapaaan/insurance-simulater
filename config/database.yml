@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: Insurance_Simulater_production
-  username: Insurance_Simulater
-  password: <%= ENV['INSURANCE_SIMULATER_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
