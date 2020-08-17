@@ -29,6 +29,7 @@ https://insurance-simulater.herokuapp.com/
 ・Ruby(2.6.5)  
 ・Ruby on Rails(6.0.0)  
 ・HEROKU
+
 ## 課題や今後実装予定の内容
 ・現状20代しか出力されない為、保険会社の加入年齢に応じた保険を出力  
 ・現状医療保険しか出力されない為、ガン保険や死亡保険の追加実装  
